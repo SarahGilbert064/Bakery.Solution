@@ -9,7 +9,7 @@ namespace Bakery.Models
     public int PriceOfLoaf = 5;
 
     public int ReturnBreadPrice(int numOfLoafs)
-    {
+    { 
       int finalBreadPrice = 0;
       for (int i = 1; i <= numOfLoafs; i++)
       {

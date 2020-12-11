@@ -3,7 +3,7 @@ using System;
 
 namespace Bakery.Models
 {
-  public class Pastr
+  public class Pastry
   {
     public int NewPastry { get; set; }
 

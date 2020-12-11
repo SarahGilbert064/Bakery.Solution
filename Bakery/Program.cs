@@ -1,4 +1,5 @@
 using Bakery.Models;
+using System.Collections.Generic;
 using System;
 
 namespace Bakery
@@ -9,37 +10,45 @@ namespace Bakery
     public static Pastry pastryOrder = new Pastry();
     public static void Main()
     {
+      int finalPrice = 0;
       Console.WriteLine("Welcome to Pretty Baked Bakery!");
+      OrderMenu(finalPrice);
+    }
+    public static void OrderMenu(int finalPrice)
+    {
       Console.WriteLine("Would you like to place a bread or pastry order? Please type 'bread' or 'pastry'.");
       string userInput = Console.ReadLine();
       if (userInput.Equals("bread"))
       {
-        ShowBreadOrder();
+        ShowBreadOrder(finalPrice);
       }
       else if (userInput.Equals("pastry"))
       {
-        ShowPastryOrder();
+        ShowPastryOrder(finalPrice);
       }
-      else 
+      else
       {
         Main();
-      } 
-
+      }
+    }  
       // BREAD ORDER
-      public static void ShowBreadOrder(int )
+      public static void ShowBreadOrder(int finalPrice)
       {
+        Console.WriteLine("How many loafs would you like to order?");
+        int numOfLoafs = int.Parse(Console.ReadLine());
+        Bread newLoaf = new Bread();
+        int finalBreadPrice = newLoaf.ReturnBreadPrice(numOfLoafs);
+        Console.WriteLine(finalBreadPrice);
 
       }
 
       // PASTRY ORDER
-      public static void ShowPastryOrder()
+      public static void ShowPastryOrder(int finalPrice)
       {
 
       }
 
 
       
-      // int orderTotal = 0;
-    }
   }
 }

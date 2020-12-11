@@ -6,12 +6,15 @@ namespace Bakery.Models
   public class Bread
   {
     public int NewLoaf { get; set; }
-    // private static List<Bread> _instances = new List<Bread> {};
     public int PriceOfLoaf = 5;
+
+    // public Bread(int numOfLoafs)
+    // {
+    //   numOfLoafs += numOfLoafs;
+    // }
 
     public int ReturnBreadPrice(int numOfLoafs)
     { 
-      
       int finalBreadPrice = 0;
       for (int i = 1; i <= numOfLoafs; i++)
       {

@@ -38,14 +38,17 @@ namespace Bakery
         int numOfLoafs = int.Parse(Console.ReadLine());
         Bread newLoaf = new Bread();
         int finalBreadPrice = newLoaf.ReturnBreadPrice(numOfLoafs);
-        Console.WriteLine(finalBreadPrice);
-
+        Console.WriteLine("Your total is: $ " + finalBreadPrice);
       }
 
       // PASTRY ORDER
       public static void ShowPastryOrder(int finalPrice)
       {
-
+        Console.WriteLine("How many pastries would you like to order?");
+        int numOfPastries = int.Parse(Console.ReadLine());
+        Pastry newPastry = new Pastry();
+        int finalPastryPrice = newPastry.ReturnPastryPrice(numOfPastries);
+        Console.WriteLine("Your total is: $ " + finalPastryPrice);
       }
 
 

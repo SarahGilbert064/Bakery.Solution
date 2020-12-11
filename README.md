@@ -26,7 +26,7 @@
 
 | Age Function |||
 
-|Should correctly create an age object with current age | (my age) | 29 |
+|Should correctly create an bread object from the bread class | (my age) | 29 |
 
 
 

@@ -1,7 +1,10 @@
-namespace ProjectName
+using System.Collections.Generic;
+using System;
+
+namespace Bakery.Models
 {
-  public class ClassName
+  public class Brea
   {
-    // properties, constructors, methods, etc. go here
+    
   }
 }

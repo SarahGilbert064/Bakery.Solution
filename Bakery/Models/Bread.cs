@@ -8,11 +8,6 @@ namespace Bakery.Models
     public int NewLoaf { get; set; }
     public int PriceOfLoaf = 5;
 
-    // public Bread(int numOfLoafs)
-    // {
-    //   numOfLoafs += numOfLoafs;
-    // }
-
     public int ReturnBreadPrice(int numOfLoafs)
     { 
       int finalBreadPrice = 0;

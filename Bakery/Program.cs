@@ -48,7 +48,7 @@ namespace Bakery
         int numOfPastries = int.Parse(Console.ReadLine());
         Pastry newPastry = new Pastry();
         int finalPastryPrice = newPastry.ReturnPastryPrice(numOfPastries);
-        Console.WriteLine("Your total is: $ " + finalPastryPrice);
+        Console.WriteLine("Your total is: $ " + finalPastryPrice * numOfPastries);
       }
 
 

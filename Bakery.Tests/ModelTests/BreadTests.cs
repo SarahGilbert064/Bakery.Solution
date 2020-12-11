@@ -16,10 +16,10 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void CalculatePrice_ReturnPrice_Int()
+    public void CalculatePrice_ReturnBreadPrice_Int()
     {
       Bread newLoaf = new Bread();
-      int finalAmount = newLoaf.ReturnPrice(5);
+      int finalAmount = newLoaf.ReturnBreadPrice(5);
       Assert.AreEqual(5, finalAmount);
     }
   }

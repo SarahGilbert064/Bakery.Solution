@@ -20,7 +20,7 @@ namespace Bakery.Tests
     {
       Pastry newPastry = new Pastry();
       int finalAmount = newPastry.ReturnPastryPrice(2);
-      Assert.AreEqual(1, finalAmount);
+      Assert.AreEqual(2, finalAmount);
     }
   }
 }

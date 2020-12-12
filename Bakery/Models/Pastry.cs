@@ -8,6 +8,10 @@ namespace Bakery.Models
     public int NewPastry { get; set; }
     public int PriceOfPastry = 2;
 
+    public Pastry(int newPastry)
+    {
+      NewPastry += newPastry;
+    }
     public int ReturnPastryPrice(int numOfPastries)
     {
       int finalPastryPrice = 0;

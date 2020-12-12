@@ -16,19 +16,6 @@
 #### GO BIG AND GET BAKED AT PRETTY BAKED BAKERY.
   
 
-## Specifications
-
-  
-
-| Test | Input | Output |
-
-| :-------------------- | :------------------------------------- | :-------------------------- |
-
-| Age Function |||
-
-|Should correctly create an bread object from the bread class | (my age) | 29 |
-
-
 
 ## Setup Instruction
 

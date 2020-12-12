@@ -17,10 +17,6 @@ namespace Bakery.Models
       int finalBreadPrice = 0;
       for (int i = 1; i <= numOfLoafs; i++)
       {
-        // if(i % 3 ==0)
-        // {
-        //   finalBreadPrice = PriceOfLoaf;
-        // }
         if(i == 1)
         {
           finalBreadPrice += 5;
@@ -34,3 +30,4 @@ namespace Bakery.Models
     }
   }
 }
+

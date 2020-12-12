@@ -7,7 +7,7 @@ namespace Bakery
   class Program
   {
     public static Bread breadOrder = new Bread(0);
-    public static Pastry pastryOrder = new Pastry();
+    public static Pastry pastryOrder = new Pastry(0);
     public static void Main()
     {
       int finalPrice = 0;
@@ -37,9 +37,18 @@ namespace Bakery
         Console.WriteLine("SPECIAL OFFER! BUY 2 LOAFS, GET 1 FREE!");
         Console.WriteLine("One loaf of bread = $5.00");
         Console.WriteLine("How many loafs would you like to order?");
+
         int numOfLoafs = int.Parse(Console.ReadLine());
-        Bread newLoaf = new Bread(0);
+        Bread newLoaf = new Bread(0);        
         int finalBreadPrice = newLoaf.ReturnBreadPrice(numOfLoafs);
+        for(int i = 1; i <= finalBreadPrice; i++)
+        {
+          if (i % 3 == 0)
+          {
+            
+          }
+        }
+
         Console.WriteLine("Your total is: $ " + finalBreadPrice * numOfLoafs);
       }
 
@@ -49,9 +58,12 @@ namespace Bakery
         Console.WriteLine("One pastry = $2.00");
         Console.WriteLine("SPECIAL OFFER: Get 3 pastries for $5.00!");
         Console.WriteLine("How many pastries would you like to order?");
+
         int numOfPastries = int.Parse(Console.ReadLine());
-        Pastry newPastry = new Pastry();
+        Pastry newPastry = new Pastry(0);
         int finalPastryPrice = newPastry.ReturnPastryPrice(numOfPastries);
+        
+
         Console.WriteLine("Your total is: $ " + finalPastryPrice * numOfPastries);
       }  
   }

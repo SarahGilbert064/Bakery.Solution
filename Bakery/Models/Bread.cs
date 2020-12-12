@@ -12,21 +12,33 @@ namespace Bakery.Models
     {
       NewLoaf += newLoaf;
     }
-    public int ReturnBreadPrice(int numOfLoafs)
+    public int ReturnBreadPrice(int newLoaf)
     { 
-      int finalBreadPrice = 0;
-      for (int i = 1; i <= numOfLoafs; i++)
+      int breadPrice = 0;
+      for (int i = 1; i <= newLoaf; i++)
       {
         if(i == 1)
         {
-          finalBreadPrice += 5;
+          breadPrice += 5;
         }
         else
         {
-          finalBreadPrice += 0;
+          breadPrice += 0;
         }
       }
-      return finalBreadPrice;
+      return breadPrice;
+    }
+
+    public int FinalPrice(int newLoaf)
+    {
+      int finalAmount = PriceOfLoaf * newLoa;
+      {
+        if (newLoaf % 3 == 0)
+        {
+          finalAmount -= 5;
+        }
+      }
+      return finalAmount;
     }
   }
 }

@@ -12,10 +12,10 @@ namespace Bakery.Models
     {
       NewPastry += newPastry;
     }
-    public int ReturnPastryPrice(int numOfPastries)
+    public int ReturnPastryPrice(int newPastry)
     {
       int finalPastryPrice = 0;
-      for (int i = 1; i <= numOfPastries; i++)
+      for (int i = 1; i <= newPastry; i++)
       {
         if(i == 1)
         {
@@ -28,5 +28,17 @@ namespace Bakery.Models
       }
       return finalPastryPrice;
     }
+
+    // public int FinalPrice(int newPastry)
+    // {
+    //   int finalAmount = PriceOfPastry * newPastry;
+    //   {
+    //     if (newPastry % 3 == 0)
+    //     {
+    //       finalAmount -= 1;
+    //     }
+    //   }
+    //   return finalAmount;
+    // }
   }
 }

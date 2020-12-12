@@ -15,7 +15,7 @@ namespace Bakery.Models
       {
         if(i == 1)
         {
-          finalPastryPrice+=2;
+          finalPastryPrice+= 2;
         }
         else
         {

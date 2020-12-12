@@ -29,16 +29,16 @@ namespace Bakery.Models
       return finalPastryPrice;
     }
 
-    // public int FinalPrice(int newPastry)
-    // {
-    //   int finalAmount = PriceOfPastry * newPastry;
-    //   {
-    //     if (newPastry % 3 == 0)
-    //     {
-    //       finalAmount -= 1;
-    //     }
-    //   }
-    //   return finalAmount;
-    // }
+    public int FinalPrice(int newPastry)
+    {
+      int finalAmount = PriceOfPastry * newPastr;
+      {
+        if (newPastry % 3 == 0)
+        {
+          finalAmount -= 1;
+        }
+      }
+      return finalAmount;
+    }
   }
 }

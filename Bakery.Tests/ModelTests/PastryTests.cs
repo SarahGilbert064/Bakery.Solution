@@ -23,11 +23,11 @@ namespace Bakery.Tests
       Assert.AreEqual(2, finalAmount);
     }
 
-    // [TestMethod]
-    // public void FinalPrice_CalculateFinalAmount_Int()
-    // {
-    //   Pastry newPastry = new Pastry(2);
-    //   Assert.AreEqual(4, newPastry.FinalPrice(2));
-    // }
+    [TestMethod]
+    public void FinalPrice_CalculateFinalAmount_Int()
+    {
+      Pastry newPastry = new Pastry(2);
+      Assert.AreEqual(4, newPastry.FinalPrice(2));
+    }
   }
 }

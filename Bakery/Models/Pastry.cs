@@ -31,7 +31,7 @@ namespace Bakery.Models
 
     public int FinalPrice(int newPastry)
     {
-      int finalAmount = PriceOfPastry * newPastr;
+      int finalAmount = PriceOfPastry * newPastry;
       {
         if (newPastry % 3 == 0)
         {

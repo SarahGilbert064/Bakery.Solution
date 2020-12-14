@@ -7,7 +7,7 @@ namespace Bakery
   class Program
   {
     public static Bread breadOrder = new Bread(5);
-    public static Pastry pastryOrder = new Pastry(0);
+    public static Pastry pastryOrder = new Pastry(2);
     public static void Main()
     {
       int finalPrice = 0;
@@ -41,7 +41,17 @@ namespace Bakery
       int numOfLoafs = int.Parse(Console.ReadLine());
       Bread newLoaf = new Bread(5);        
       int breadPrice = newLoaf.FinalPrice(numOfLoafs);
-      Console.WriteLine("Your total is: $ " + breadPrice);
+      if(numOfLoafs.Equals(2))
+      {
+        Console.WriteLine("Hope you like bread, because you are getting a loaf for free!");
+        Console.WriteLine("Your total is: $ " + breadPrice);
+        Console.WriteLine("Thanks for coming to Pretty Baked Bakery, have an awesome day!");
+      }
+      else
+      {
+        Console.WriteLine("Your total is: $ " + breadPrice);
+        Console.WriteLine("Thanks for coming to Pretty Baked Bakery, have an awesome day!");
+      }
     }
 
       // // PASTRY ORDER
@@ -57,6 +67,7 @@ namespace Bakery
         
 
       Console.WriteLine("Your total is: $ " + pastryPrice);
+      Console.WriteLine("Thanks for coming to Pretty Baked Bakery, have an awesome day!");
     }  
   }
 }

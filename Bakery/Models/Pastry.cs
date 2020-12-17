@@ -12,7 +12,7 @@ namespace Bakery.Models
     {
       NewPastry += newPastry;
     }
-    public int ReturnPastryPrice(int newPastry)
+    public int GetPastryPrice(int newPastry)
     {
       int finalPastryPrice = 0;
       for (int i = 1; i <= newPastry; i++)
@@ -29,7 +29,7 @@ namespace Bakery.Models
       return finalPastryPrice;
     }
 
-    public int FinalPrice(int newPastry)
+    public int DiscountPrice(int newPastry)
     {
       int finalAmount = PriceOfPastry * newPastry;
       {

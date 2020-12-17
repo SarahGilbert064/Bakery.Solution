@@ -41,15 +41,21 @@ namespace Bakery
       int numOfLoafs = int.Parse(Console.ReadLine());
       Bread newLoaf = new Bread(5);        
       int breadPrice = newLoaf.FinalPrice(numOfLoafs);
+      int totalBreadPrice = breadPrice * numOfLoafs;
       if(numOfLoafs.Equals(2))
       {
         Console.WriteLine("Hope you like bread, because you are getting a loaf for free!");
-        Console.WriteLine("Your total is: $ " + breadPrice);
+        Console.WriteLine("Your total is: $ " + totalBreadPrice);
         Console.WriteLine("Thanks for coming to Pretty Baked Bakery, have an awesome day!");
+      }
+      else if (numOfLoafs.Equals(3))
+      {
+        Console.WriteLine("Thanks for your business, enjoy this discount!");
+        Console.WriteLine("Your total is: " + (totalBreadPrice - 5));
       }
       else
       {
-        Console.WriteLine("Your total is: $ " + breadPrice);
+        Console.WriteLine("Your total is: $ " + totalBreadPrice);
         Console.WriteLine("Thanks for coming to Pretty Baked Bakery, have an awesome day!");
       }
     }
@@ -63,11 +69,18 @@ namespace Bakery
 
       int numOfPastries = int.Parse(Console.ReadLine());
       Pastry newPastry = new Pastry(2);
-      int pastryPrice = newPastry.FinalPrice(numOfPastries);
-        
-
-      Console.WriteLine("Your total is: $ " + pastryPrice);
-      Console.WriteLine("Thanks for coming to Pretty Baked Bakery, have an awesome day!");
+      int pastryPrice = newPastry.GetPastryPrice(numOfPastries);
+      int totalPastryPrice = pastryPrice * numOfPastries;
+      if(numOfPastries.Equals(3))
+      {
+        Console.WriteLine("Thanks for your business, enjoy this discount!");
+        Console.WriteLine("Your total is: " + (totalPastryPrice -1));
+      }
+      else
+      {
+        Console.WriteLine("Your total is: $ " + totalPastryPrice);
+        Console.WriteLine("Thanks for coming to Pretty Baked Bakery, have an awesome day!");
+      }
     }  
   }
 }

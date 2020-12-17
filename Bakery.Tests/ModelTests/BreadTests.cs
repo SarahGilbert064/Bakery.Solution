@@ -19,7 +19,7 @@ namespace Bakery.Tests
     public void GetPrice_ReturnBreadPrice_Int()
     {
       Bread newLoaf = new Bread(5);
-      int finalAmount = newLoaf.ReturnBreadPrice(1);
+      int finalAmount = newLoaf.FinalPrice(1);
       Assert.AreEqual(5, finalAmount);
     }
 
@@ -27,7 +27,14 @@ namespace Bakery.Tests
     public void FinalPrice_CalculateFinalAmount_Int()
     {
       Bread newLoaf = new Bread(5);
-      Assert.AreEqual(25, newLoaf.FinalPrice(5));
+      Assert.AreEqual(5, newLoaf.FinalPrice(5));
+    }
+
+    [TestMethod]
+    public void DiscountPrice_CalculateDiscountPrice_Int()
+    {
+      Bread newLoaf = new Bread(5);
+      Assert.AreEqual(10, newLoaf.DiscountPrice(3));
     }
   }
 }

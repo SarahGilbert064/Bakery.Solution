@@ -31,7 +31,7 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void DiscountPrice_CalculateDiscountPrice_Int()
+    public void DiscountPrice_CalculateBreadDiscount_Int()
     {
       Bread newLoaf = new Bread(5);
       Assert.AreEqual(10, newLoaf.DiscountPrice(3));

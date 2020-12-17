@@ -16,10 +16,10 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void GetPrice_ReturnPastryPrice_Int()
+    public void GetPastryPrice_ReturnPastryPrice_Int()
     {
       Pastry newPastry = new Pastry(2);
-      int finalAmount = newPastry.ReturnPastryPrice(1);
+      int finalAmount = newPastry.GetPastryPrice(1);
       Assert.AreEqual(2, finalAmount);
     }
 
@@ -27,7 +27,14 @@ namespace Bakery.Tests
     public void FinalPrice_CalculateFinalAmount_Int()
     {
       Pastry newPastry = new Pastry(2);
-      Assert.AreEqual(4, newPastry.FinalPrice(2));
+      Assert.AreEqual(2, newPastry.GetPastryPrice(2));
+    }
+
+    [TestMethod]
+    public void DiscountPrice_CalculatePastryDiscount_Int()
+    {
+      Pastry newPasty = new Pastry(2);
+      Assert.AreEqual(5, newPasty.DiscountPrice(3));
     }
   }
 }
